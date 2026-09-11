@@ -1,6 +1,6 @@
 # 🔎 Análise de Sistemas — Blog Pessoal
 
-Projeto prático de **Análise de Sistemas e Engenharia de Requisitos**, utilizando o **Blog Pessoal** como estudo de caso.
+Projeto prático de **Análise de Sistemas e Engenharia de Requisitos**, utilizando o projeto **Blog Pessoal** desenvolvido durante o Bootcamp Java Full Stack da **Generation Brasil** como estudo de caso.
 
 O objetivo é aplicar técnicas de análise utilizadas no desenvolvimento de sistemas, desde o levantamento e especificação de requisitos até a estruturação ágil e modelagem de processos e sistemas.
 
@@ -31,6 +31,9 @@ O sistema contempla funcionalidades como:
 - Gerenciamento de postagens
 - Gerenciamento de temas
 - Associação entre usuários, temas e postagens
+
+[Blog Pessoal FrontEnd](https://github.com/fabricianalima/blog-pessoal-react)
+[Blog Pessoal BackEnd](https://github.com/fabricianalima/blog-pessoal-api)
 
 ---
 

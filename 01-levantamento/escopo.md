@@ -1,47 +1,94 @@
-# Especificação de Escopo: Aplicação Blog Pessoal
+# Especificação de Escopo — Aplicação Blog Pessoal
 
 ## 1. Visão Geral do Produto
 
-O **Blog Pessoal** é uma plataforma web para publicação de artigos e gerenciamento de conteúdos organizados por temas[cite: 2, 3]. A solução é dividida em um backend em API REST Java/Spring Boot e uma interface SPA responsiva construída em React com TypeScript.
+O Blog Pessoal é uma plataforma web para publicação e gerenciamento
+de conteúdos organizados por temas.
+
+A solução é composta por uma API REST desenvolvida em Java/Spring Boot
+e uma interface web responsiva desenvolvida em React com TypeScript.
 
 ---
 
-## 2. Partes Interessadas (Stakeholders)
+## 2. Objetivo do Sistema
 
-- **Visitante / Leitor:** Acessa conteúdos públicos sem necessidade de autenticação.
-- **Autor / Usuário Cadastrado:** Realiza autenticação no sistema para criar e gerenciar seus próprios textos e temas.
-- **Time de Engenharia de Software:** Responsável pelo desenvolvimento, manutenção da API REST[cite: 3] e versionamento dos artefatos técnicos no GitHub.
+Disponibilizar uma plataforma que permita aos usuários cadastrados
+gerenciar conteúdos publicados no blog, enquanto visitantes podem
+consultar os conteúdos disponibilizados publicamente.
 
 ---
 
-## 3. Modelo de Dados / Entidades (DER)
+## 3. Partes Interessadas
 
-A aplicação baseia-se em três entidades fundamentais: **USUARIO**, **POSTAGEM** e **TEMA**.
+### Visitante / Leitor
 
-```mermaid
-erDiagram
-    USUARIO ||--o{ POSTAGEM : escreve
-    TEMA ||--o{ POSTAGEM : classifica
+Acessa os conteúdos públicos sem necessidade de autenticação.
 
-    USUARIO {
-        bigint id PK
-        varchar(255) nome
-        varchar(255) usuario
-        varchar(255) senha
-        varchar(5000) foto
-    }
+### Autor / Usuário
 
-    POSTAGEM {
-        bigint id PK
-        varchar(100) titulo
-        varchar(1000) texto
-        datetime data
-        bigint tema_id FK
-        bigint usuario_id FK
-    }
+Realiza autenticação e gerencia seus próprios conteúdos.
 
-    TEMA {
-        bigint id PK
-        varchar(255) descricao
-    }
-```
+### Administrador
+
+Possui permissões adicionais para gerenciamento do sistema.
+
+### Time de Desenvolvimento
+
+Responsável pela implementação, manutenção e evolução da solução.
+
+> O detalhamento dos stakeholders está disponível em
+> [stakeholders.md](../01-levantamento/stakeholders.md).
+
+---
+
+## 4. Escopo do Sistema
+
+### 4.1 Dentro do Escopo
+
+- Cadastro e autenticação de usuários
+- Gerenciamento de postagens
+- Gerenciamento de temas
+- Associação entre postagens e temas
+- Consulta de postagens
+- Filtro de postagens por título
+- Filtro de postagens por tema
+- Controle de acesso conforme perfil do usuário
+
+### 4.2 Fora do Escopo
+
+- Integração com redes sociais para publicação automática
+- Sistema de comentários
+- Monetização do conteúdo
+- Sistema de notificações
+- Analytics avançado
+
+---
+
+## 5. Principais Entidades
+
+O sistema possui como principais entidades:
+
+- Usuário
+- Postagem
+- Tema
+
+O modelo de dados detalhado será apresentado na documentação
+de modelagem do sistema.
+
+---
+
+## 6. Premissas e Restrições
+
+### Premissas
+
+- Usuários devem estar cadastrados para realizar operações de
+  gerenciamento.
+- Cada postagem deve estar associada a um tema.
+- O acesso às funcionalidades deve respeitar as permissões
+  definidas para cada perfil.
+
+### Restrições
+
+- Backend desenvolvido em Java e Spring Boot.
+- Frontend desenvolvido em React e TypeScript.
+- Comunicação realizada por meio de API REST.
