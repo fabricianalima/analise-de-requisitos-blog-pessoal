@@ -1,38 +1,98 @@
-# 📐 Análise de Sistemas & Engenharia de Requisitos — Case Blog Pessoal
+# 🔎 Análise de Sistemas — Blog Pessoal
 
-Este repositório é uma **base de conhecimento e aplicação prática** focada em Análise de Sistemas, Engenharia de Requisitos e Modelagem de Software.
+Projeto prático de **Análise de Sistemas e Engenharia de Requisitos**, utilizando o **Blog Pessoal** como estudo de caso.
 
-O objetivo principal é documentar a arquitetura e as especificações funcionais e técnicas do projeto **Blog Pessoal**, uma aplicação completa com API REST em Java/Spring Boot e Frontend em React.
-
----
-
-## 🛠️ Tecnologias e Soluções Mapeadas
-
-- **Backend:** Java, Spring Boot, Spring Security, JPA/Hibernate, MySQL, JWT.
-- **Frontend:** React, TypeScript, Axios, HTML/CSS.
-- **Análise & Modelagem:** Engenharia de Requisitos, BPMN 2.0, UML (Diagrama de Sequência e DER), BDD, Ágil (Scrum/User Stories).
+O objetivo é aplicar técnicas de análise utilizadas no desenvolvimento de sistemas, desde o levantamento e especificação de requisitos até a estruturação ágil e modelagem de processos e sistemas.
 
 ---
 
-## 🔗 Repositórios de Código
+## 🎯 Objetivo
 
-- 💾 [Backend API REST (Java / Spring Boot)](https://github.com/fabricianalima/blog-pessoal-api)
-- 💻 [Frontend Web (React)](https://github.com/fabricianalima/blog-pessoal-react)
+Desenvolver e documentar, de forma prática, conhecimentos relacionados a:
 
----
-
-## 📚 Documentação e Artefatos (Guia do Repositório)
-
-Toda a documentação funcional do projeto foi estruturada e dividida na pasta [`/docs`](./docs):
-
-1. **[01. Engenharia de Requisitos](./docs/01-requisitos.md):** Levantamento de Requisitos Funcionais (RF), Não Funcionais (RNF) e Regras de Negócio (RN).
-2. **[02. Metodologias Ágeis & BDD](./docs/02-agile.md):** Escrita de User Stories, Critérios de Aceitação (Given/When/Then) e Definition of Done (DoD).
-3. **[03. Mapeamento de Processos & UML](./docs/03-processos-uml.md):** Diagrama de Sequência UML (fluxo de autenticação JWT), Mapeamento de Endpoints e Diagrama Entidade-Relacionamento (DER).
+- Engenharia de Requisitos
+- Análise e validação de requisitos
+- Regras de negócio
+- Priorização
+- Metodologias Ágeis
+- Modelagem de processos
+- UML e casos de uso
+- Rastreabilidade de requisitos
 
 ---
 
-## 🎯 Objetivos de Aprendizado e Aplicação
+## 📌 Sobre o projeto
 
-- Implementar práticas de governança de software e rastreabilidade de requisitos.
-- Facilitar a comunicação entre as áreas de negócio e o time de engenharia.
-- Mapear a arquitetura de software para diagnósticos mais rápidos na sustentação de sistemas.
+O **Blog Pessoal** é utilizado como estudo de caso para aplicar as técnicas de análise.
+
+O sistema contempla funcionalidades como:
+
+- Cadastro e autenticação de usuários
+- Gerenciamento de postagens
+- Gerenciamento de temas
+- Associação entre usuários, temas e postagens
+
+---
+
+## 📂 Documentação
+
+### 01. Levantamento
+
+- Levantamento de requisitos
+- Stakeholders
+- Escopo
+
+### 02. Especificação
+
+- Requisitos Funcionais
+- Requisitos Não Funcionais
+- Regras de Negócio
+- Análise e Validação
+- Priorização
+
+### 03. Agile
+
+- Épicos
+- User Stories
+- Product Backlog
+- Critérios de Aceitação
+- Definition of Done
+- Refinamento
+
+### 04. Processos
+
+- AS-IS
+- TO-BE
+- Fluxogramas
+- BPMN
+
+### 05. Modelagem
+
+- Casos de Uso
+- UML
+
+### 06. Rastreabilidade
+
+- Matriz de Rastreabilidade
+
+---
+
+## 🛠️ Tecnologias do sistema analisado
+
+- Java
+- Spring Boot
+- REST API
+- JPA / Hibernate
+- Banco de dados relacional
+- React
+- Git e GitHub
+
+> O foco deste repositório é a **Análise de Sistemas e Engenharia de Requisitos**. As tecnologias são apresentadas como parte do sistema utilizado no estudo de caso.
+
+---
+
+## 👩‍💻 Autora
+
+**Fabriciana Lima**
+
+Analista de Sistemas | PegaSystems | Java | Spring Boot | Análise de Sistemas | Requisitos | Processos

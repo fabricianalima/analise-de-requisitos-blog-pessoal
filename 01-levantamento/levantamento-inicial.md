@@ -2,7 +2,6 @@
 
 ## 1. Informações da Sessão
 
-- **Data:** 10/09/2026
 - **Técnica Utilizada:** Entrevista Semiestruturada / Workshop de Alinhamento
 - **Participantes:** Analista de Sistemas, Product Owner (PO), Especialista de Negócio
 
